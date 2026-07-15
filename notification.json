@@ -1,0 +1,77 @@
+{
+  "version": 1,
+  "title": "Что нового",
+  "items": [
+    {
+      "id": "welcome_card",
+      "enabled": true,
+      "pinned": true,
+      "priority": 100,
+      "style": "info",
+      "badge": "НОВОЕ",
+      "title": "Кастомные уведомления уже работают",
+      "text": "Этот блок заполняется из notification.json. Можно писать обычный текст, делать карточку кликабельной и добавлять действия снизу.",
+      "footer": "Карточка целиком открывает диалог, а кнопки снизу выполняют свои действия.",
+      "dismissible": false,
+      "tap_action": {
+        "type": "dialog",
+        "dialog_title": "Как это редактировать",
+        "dialog_text": "Открой notification.json в репозитории и измени массив items.\n\nПоддерживаются стили: neutral, info, success, warning, danger.\n\nДействия: url, dialog, tg_username, copy, refresh."
+      },
+      "actions": [
+        {
+          "type": "dialog",
+          "text": "Подробнее",
+          "dialog_title": "Подсказка",
+          "dialog_text": "Если у карточки один action и не задан tap_action, вся карточка становится кликабельной автоматически."
+        },
+        {
+          "type": "copy",
+          "text": "Скопировать текст",
+          "copy_text": "Кастомные уведомления Discord Status подключены"
+        }
+      ]
+    },
+    {
+      "id": "telegram_link",
+      "enabled": true,
+      "priority": 80,
+      "style": "success",
+      "badge": "ССЫЛКА",
+      "title": "Открыть Telegram-профиль",
+      "text": "Для быстрых переходов можно повесить действие на username или обычный URL.",
+      "footer": "Лучше держать короткие подписи у action-кнопок, чтобы они влезали в одну строку.",
+      "actions": [
+        {
+          "type": "tg_username",
+          "text": "@optimist_opti",
+          "username": "optimist_opti"
+        },
+        {
+          "type": "url",
+          "text": "GitHub",
+          "url": "https://github.com/OptimistOpti/DiscordStatusPlugin"
+        }
+      ]
+    },
+    {
+      "id": "maintenance_notice",
+      "enabled": true,
+      "priority": 60,
+      "style": "warning",
+      "badge": "ВАЖНО",
+      "title": "Пример временного объявления",
+      "text": "Здесь можно писать техработы, новости релиза, ограничения или подсказки по настройке синхронизации.",
+      "footer": "Эту карточку можно скрыть локально кнопкой ниже.",
+      "dismissible": true,
+      "actions": [
+        {
+          "type": "dialog",
+          "text": "Открыть текст",
+          "dialog_title": "Техработы",
+          "dialog_text": "Любой длинный текст, переносы строк, ссылки вида https://example.com и пояснения для пользователя."
+        }
+      ]
+    }
+  ]
+}
