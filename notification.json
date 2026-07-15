@@ -1,12 +1,31 @@
 {
-  "version": 1,
-  "title": "Уведомления плагина",
+  "version": 2,
+  "title": "Что нового",
   "items": [
     {
-      "id": "example_minimal",
+      "id": "news_ci_cd_deployment",
+      "enabled": true,
+      "priority": 100,
       "style": "success",
-      "title": "Вышло обновление",
-      "text": "Проверка"
+      "badge": "CI/CD",
+      "title": "Автоматизация сборки",
+      "text": "Внедрены рабочие процессы [GitHub](url:https://github.com/OptimistOpti) для автоматической сборки ваших модов.",
+      "footer": "Репозитории теперь поддерживают автоматическое отслеживание версий."
+    },
+    {
+      "id": "news_java_reflection",
+      "enabled": true,
+      "priority": 80,
+      "style": "info",
+      "badge": "DEV",
+      "title": "Java Reflection API",
+      "text": "Обновлен движок для Python-плагинов [Rei plugins](dialog:tech_info) с улучшенной поддержкой Java reflection.",
+      "dialogs": {
+        "tech_info": {
+          "title": "Техническое обновление",
+          "text": "Теперь Chaquopy стабильнее работает с модифицированными клиентами для Telegram."
+        }
+      }
     }
   ]
 }
