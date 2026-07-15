@@ -4,7 +4,7 @@
   "items": [
     {
       "id": "example_minimal",
-      "style": "warning",
+      "style": "info",
       "title": "Вышло обновление",
       "text": "Проверка"
     }
