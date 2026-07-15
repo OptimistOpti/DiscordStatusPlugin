@@ -1,12 +1,12 @@
 {
-  "version": 2,
+  "version": 1,
   "title": "Уведомления плагина",
   "items": [
     {
       "id": "example_minimal",
-      "style": "info",
+      "style": "warning",
       "title": "Вышло обновление",
-      "text": "[тык](https://t.me/rei_plugins)"
+      "text": "Проверка"
     }
   ]
 }
