@@ -1,0 +1,66 @@
+{
+  "version": 2,
+  "title": "Что нового",
+  "items": [
+    {
+      "id": "news_inline_ok",
+      "enabled": true,
+      "pinned": true,
+      "priority": 100,
+      "style": "info",
+      "badge": "НОВОЕ",
+      "title": "Inline-ссылки",
+      "text": "Открыть [GitHub](url:https://github.com/OptimistOpti/DiscordStatusPlugin), перейти в [Telegram](tg:optimist_opti) или [показать подсказку](dialog:hint_1).",
+      "dialogs": {
+        "hint_1": {
+          "title": "Подсказка",
+          "text": "Ссылки внутри текста теперь рендерятся отдельными span-элементами и кликаются прямо в карточке."
+        }
+      },
+      "footer": "Короткий текст смотрится лучше, чем длинный абзац."
+    },
+    {
+      "id": "news_actions_mix",
+      "enabled": true,
+      "priority": 80,
+      "style": "success",
+      "badge": "LINKS",
+      "title": "Ключи и действия",
+      "text": "Можно писать [канал](channel) и [документацию](docs) через ключи, не хардкодя ссылки прямо в тексте.",
+      "inline_links": [
+        {
+          "key": "channel",
+          "type": "tg_username",
+          "username": "optimist_opti"
+        },
+        {
+          "key": "docs",
+          "type": "url",
+          "url": "https://plugins.exteragram.app/docs"
+        }
+      ],
+      "actions": [
+        {
+          "type": "refresh",
+          "text": "Обновить"
+        }
+      ]
+    },
+    {
+      "id": "news_local_hide",
+      "enabled": true,
+      "priority": 60,
+      "style": "warning",
+      "badge": "INFO",
+      "title": "Локальное скрытие",
+      "text": "Если карточка временная, можно оставить [подробности](dialog:temp_note) и кнопку скрытия снизу.",
+      "dialogs": {
+        "temp_note": {
+          "title": "Временное уведомление",
+          "text": "Такую карточку удобно использовать для техработ, анонсов или разовых подсказок."
+        }
+      },
+      "dismissible": true
+    }
+  ]
+}
