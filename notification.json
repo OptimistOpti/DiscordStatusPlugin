@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "items": [
+    {
+      "id": "choice_demo",
+      "title": "Выбор действия",
+      "text": "Выберите один из вариантов ниже:",
+      "actions": [
+        {
+          "type": "confirm",
+          "text": "Подтвердить"
+        },
+        {
+          "type": "cancel",
+          "text": "Отмена"
+        }
+      ]
+    }
+  ]
+}
